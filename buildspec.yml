@@ -5,7 +5,7 @@ phases:
     commands:
       - echo Checking Docker version...
       - docker --version
-      - DATE_TAG=$(TZ=Asia/Tokyo date ‘+%Y%m%d-%H%M%S-%03N')
+      - DATE_TAG=$(date '+%Y%m%d-%H%M')
       - IMAGE_TAG=latest
       - echo Logging in to Amazon ECR...
       - aws —version
