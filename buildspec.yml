@@ -13,8 +13,6 @@ phases:
       - REPOSITORY_URI=223647876635.dkr.ecr.ap-south-1.amazonaws.com/django-aws-tf-backend
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
       - echo Build started on `date`
-      - pip install -r requirements.txt
-      - python manage.py collectstatic --noinput
   
   build:
     commands:
