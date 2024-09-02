@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 import braintree
 from dotenv import load_dotenv
+from socket import gethostbyname
+from socket import gethostname
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,6 +36,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS should be set as a comma-separated list in your .env file
 ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS.append(gethostbyname(gethostname()))
 
 # Application definition
 
