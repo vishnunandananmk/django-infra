@@ -9,7 +9,7 @@ H20Express is an innovative Django application that allows users to purchase wat
 - Transaction History: The application tracks user's purchase history, providing a record of purchased water, units, and payment details.
 - Profile Management: Users can update their profile information, including meter number, address, and phone number.
 
-## Installation
+## Installation..
 
 1. Clone the repository:
 
