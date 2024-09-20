@@ -24,6 +24,6 @@ phases:
       - docker push $REPOSITORY_URI:${DATE_TAG}-${IMAGE_TAG}
       - echo Pushed Docker image successfully
       - echo Writing image definitions file...
-      - printf '[{"name":"'$ecs_container_name'","imageUri":"%s"}]' $REPOSITORY_URI:${DATE_TAG}-${IMAGE_TAG} > adflow-imagedefinitions.json
+      - printf '[{"name":"'$ecs_container_name'","imageUri":"%s"}]' $REPOSITORY_URI:${DATE_TAG}-${IMAGE_TAG} > imagedefinitions.json
 artifacts:
-    files: adflow-imagedefinitions.json
+    files: imagedefinitions.json
