@@ -10,7 +10,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 223647876635.dkr.ecr.ap-south-1.amazonaws.com
-      - REPOSITORY_URI=223647876635.dkr.ecr.ap-south-1.amazonaws.com/django-aws-tf-backend
+      - REPOSITORY_URI=223647876635.dkr.ecr.ap-south-1.amazonaws.com/test
   build:
     commands:
       - echo Build started on `date`
